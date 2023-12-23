@@ -23,14 +23,14 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(question):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(question)
     return response.text
 
 #initialize streamlit 
 
 st.set_page_config(page_title="Q&A Demo")
-st.title('CHAT BOT')
+st.title('GEMINI CHAT BOT')
 
 st.markdown("---")
 user_input=st.text_input("Ask a question: ",key="user_input")
