@@ -25,7 +25,9 @@ To use a scraper follow this general steps:
    git clone https://github.com/goutam-kul/Gemini-chatbot.git
 
 2. Install the dependencies:
-   - in cmd 'pip install requirements.txt'
+   ```in cmd
+   'pip install requirements.txt'
 
 3. streamlit :
-   - in 'cmd streamlit run app.py'
+   ```in cmd
+   'cmd streamlit run app.py'
